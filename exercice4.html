@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Exercice 4 sur les formulaires">
+        <title>Les formulaires - Exercice n°4</title>
+    </head>
+    <body>
+    <form action="#" method="post" >
+        <fieldset>
+            <legend>Exo 4 - Revue de code</legend>
+            <fieldset>
+                <legend> Genre : </legend>
+                <input type="radio" name="genre" id="homm">
+                <label id="homme">Mr.</label>
+                <input type="radio" name="genre" id="femm">
+                <label id="femme">Mme.</label>
+                <input type="radio" name="genre" id="nonRenseign" checked>
+                <label id="nonRenseigné">Non renseigné</label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Nom & Prénom(s) : </legend>
+                <div>
+                    <label id="namee">Nom :</label>
+                    <input type="text" name="nom" id="nam" placeholder="ex: Deschamps" required>
+                </div>
+
+                <div>
+                    <label id="na">Prénom :</label>
+                    <input type="text" name="nom" id="name" placeholder="ex: Dider" required>
+                </div>
+
+                <div>
+                    <label id="prenomBi">Prénom n°2 :</label>
+                    <input type="text" name="nom" id="prenomBis" placeholder="ex: Dider">
+                </div>
+
+                <div>
+                    <label id="prenomThir">Prénom n°3 :</label>
+                    <input type="text" name="nom" id="prenomThird" placeholder="ex: Dider">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend> Ville : </legend>
+                <select>
+                <option>Choisissez parmi les options</option>
+                <option value="Calais">Calais</option>
+                <option value="Dunkerque">Dunkerque</option>
+                <option value="Boulogne s/ Mer">Boulogne s/ Mer</option>
+                <option value="Arras">Arras</option>
+                <option value="Laon">St Quentin</option>
+                <option value="St Quentin">Laon</option>
+                <option value="Soissons">Compiègne</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend> Code Postal : </legend>
+                <input type="text" placeholder="ex: 02200" required>
+            </fieldset>
+
+            <fieldset>
+                <legend> Adresse : </legend>
+                <input type="text" placeholder="ex: 02200" >
+                <textarea placeholder="Votre adresse" maxlength="12" required></textarea>
+            </fieldset>
+            <br>
+            <button type="reset">Envoyer</button>
+
+        </fieldset>
+    </form>
+    
+    </body>
+</html>
